@@ -14,7 +14,7 @@ struct HealthDataView: View {
                 Image("bg1")
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                     .edgesIgnoringSafeArea(.all)
                 VStack(spacing: 20) {
                     if let error = viewModel.errorMessage {
@@ -28,34 +28,28 @@ struct HealthDataView: View {
                             VStack(spacing: 24) {
                                 VStack(spacing: 16) {
                                     HealthInfoView(
-                                        label: Text("Heart Rate"),
-                                        value: Text("\(Int(viewModel.stepCount)) steps"),
+                                        label: Text("Respiratory Rate"),
+                                        value: Text("16 breaths per minute"),
                                         color: Color(hex: "#1E1E1E").opacity(0.5),
                                         textColor: Color(hex: "#F0F4EF")
                                     )
                                     
                                     HealthInfoView(
-                                        label: Text("Cognitive Measure"),
+                                        label: Text("Heart Rate"),
                                         value: Text(String(format: "%.1f bpm", viewModel.heartRate)),
                                         color: Color(hex: "#1E1E1E").opacity(0.5),
                                         textColor: Color(hex: "#F0F4EF")
                                     )
                                     
-                                    HealthInfoView(
-                                        label: Text("Stress"),
-                                        value: Text(String(format: "%.1f kcal", viewModel.activeEnergy)),
-                                        color: Color(hex: "#1E1E1E").opacity(0.5),
-                                        textColor: Color(hex: "#F0F4EF")
-                                    )
                                 }
                                 
-                                // 🧪 Test Notification Button
-                                Button("Send Hello World Notification") {
+                                // Test Notification Button
+                                Button("🛸") {
                                     Task {
                                         await viewModel.requestNotificationPermission()
                                         viewModel.sendNotification(
-                                            title: "Hello Astronaut 🌍",
-                                            body: "This is your test notification!"
+                                            title: "⚠️WARNING⚠️",
+                                            body: "Check your vitals, NOW‼️"
                                         )
                                     }
                                 }
@@ -77,7 +71,7 @@ struct HealthDataView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("Health Data")
+                    Text("Welcome, Astronaut!")
                         .font(.headline)
                         .foregroundColor(Color(hex: "#F0F4EF"))
                 }

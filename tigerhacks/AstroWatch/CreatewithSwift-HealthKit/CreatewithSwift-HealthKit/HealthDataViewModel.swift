@@ -42,7 +42,7 @@ import UserNotifications
                 await fetchAllHealthData()
             }
         } catch {
-            self.errorMessage = error.localizedDescription 
+            self.errorMessage = error.localizedDescription
         }
     }
 

@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  HealtKitInformation
 //
-//  Created by Matteo Altobello on 16/04/25.
 //
 
 import SwiftUI
@@ -12,7 +11,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-                    HealthDataView()
+                HealthDataView()
                 .tabItem {
                     VStack{
                         Image("home").renderingMode(.template)
@@ -23,18 +22,18 @@ struct ContentView: View {
                     CardioView()
                         .tabItem {
                             VStack{
-                                Image("cog").renderingMode(.template)
+                                Image("cardio").renderingMode(.template)
                                     .frame(width: 24, height: 24)
-                                Text("Cognitive")
+                                Text("Cardio")
                             }
                         }
             
                     CognitiveView()
                         .tabItem {
                             VStack{
-                                Image("cardio").renderingMode(.template)
+                                Image("cog").renderingMode(.template)
                                     .frame(width: 24, height: 24)
-                                Text("Cardio")
+                                Text("Cognitive")
                             }
                         }
 
@@ -51,23 +50,7 @@ struct ContentView: View {
     }
 }
 
-struct CardioView: View {
-    var body: some View {
-        Text("Cardio Page")
-    }
-}
 
-struct CognitiveView: View {
-    var body: some View {
-        Text("Cognitive Page")
-    }
-}
-
-struct StressView: View {
-    var body: some View {
-        Text("Stress Page")
-    }
-}
 
 #Preview {
     ContentView()

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		3CA789FE2DB63DB8001F0913 /* CreatewithSwift-HealthKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CreatewithSwift-HealthKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CA789FE2DB63DB8001F0913 /* AstroWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D472332EC09CEB006415EC /* AstroWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AstroWatch-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +33,7 @@
 		3CA789F52DB63DB8001F0913 = {
 			isa = PBXGroup;
 			children = (
+				84D472332EC09CEB006415EC /* AstroWatch-Info.plist */,
 				3CA78A002DB63DB8001F0913 /* CreatewithSwift-HealthKit */,
 				3CA789FF2DB63DB8001F0913 /* Products */,
 			);
@@ -40,7 +42,7 @@
 		3CA789FF2DB63DB8001F0913 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CA789FE2DB63DB8001F0913 /* CreatewithSwift-HealthKit.app */,
+				3CA789FE2DB63DB8001F0913 /* AstroWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +50,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CA789FD2DB63DB8001F0913 /* CreatewithSwift-HealthKit */ = {
+		3CA789FD2DB63DB8001F0913 /* AstroWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CA78A0C2DB63DB9001F0913 /* Build configuration list for PBXNativeTarget "CreatewithSwift-HealthKit" */;
+			buildConfigurationList = 3CA78A0C2DB63DB9001F0913 /* Build configuration list for PBXNativeTarget "AstroWatch" */;
 			buildPhases = (
 				3CA789FA2DB63DB8001F0913 /* Sources */,
 				3CA789FB2DB63DB8001F0913 /* Frameworks */,
@@ -63,11 +65,11 @@
 			fileSystemSynchronizedGroups = (
 				3CA78A002DB63DB8001F0913 /* CreatewithSwift-HealthKit */,
 			);
-			name = "CreatewithSwift-HealthKit";
+			name = AstroWatch;
 			packageProductDependencies = (
 			);
 			productName = "CreatewithSwift-HealthKit";
-			productReference = 3CA789FE2DB63DB8001F0913 /* CreatewithSwift-HealthKit.app */;
+			productReference = 3CA789FE2DB63DB8001F0913 /* AstroWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +101,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CA789FD2DB63DB8001F0913 /* CreatewithSwift-HealthKit */,
+				3CA789FD2DB63DB8001F0913 /* AstroWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +258,7 @@
 				DEVELOPMENT_TEAM = C5YAD83VF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AstroWatch-Info.plist";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your health data to display your steps, heart rate, and energy burned";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -290,6 +293,7 @@
 				DEVELOPMENT_TEAM = C5YAD83VF7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AstroWatch-Info.plist";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your health data to display your steps, heart rate, and energy burned";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -324,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CA78A0C2DB63DB9001F0913 /* Build configuration list for PBXNativeTarget "CreatewithSwift-HealthKit" */ = {
+		3CA78A0C2DB63DB9001F0913 /* Build configuration list for PBXNativeTarget "AstroWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CA78A0D2DB63DB9001F0913 /* Debug */,
