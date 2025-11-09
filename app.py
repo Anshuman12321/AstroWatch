@@ -65,8 +65,8 @@ def evaluate_astronaut(data: AstroData):
     scores = model.predict(df)[0]
 
     # Map scores to variables I'll use to prompt the llm
-    cognitiveScore = scores[0]
-    stressScore = scores[1]
+    cognitiveScore = round(scores[0],0)
+    stressScore = round(scores[1],0)
     heartRate = data.heartRate
     bpO2 = data.oxygenSaturation
 
